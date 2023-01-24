@@ -41,3 +41,4 @@ services:
       - DB_PASSWORD
       - KEYCLOAK_ADMIN
       - KEYCLOAK_ADMIN_PASSWORD
+      - HOSTNAME
