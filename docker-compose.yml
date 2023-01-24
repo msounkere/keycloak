@@ -39,6 +39,11 @@ services:
       - DB_DATABASE
       - DB_USER
       - DB_PASSWORD
+      - DB_SCHEMA
       - KEYCLOAK_ADMIN
       - KEYCLOAK_ADMIN_PASSWORD
       - KEYCLOAK_FRONTEND_URL
+      - PROXY_ADDRESS_FORWARDING
+    
+    command: 
+      - start -proxy ${KEYCLOAK_PROXY} --hostname-url ${KEYCLOAK_HOSTNAME_URL} --hostname-strict=${KEYCLOAK_STRICT}
