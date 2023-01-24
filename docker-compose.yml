@@ -39,3 +39,5 @@ services:
       - DB_DATABASE
       - DB_USER
       - DB_PASSWORD
+      - KEYCLOAK_ADMIN
+      - KEYCLOAK_ADMIN_PASSWORD
