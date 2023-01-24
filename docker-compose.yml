@@ -46,4 +46,4 @@ services:
       - PROXY_ADDRESS_FORWARDING
     
     command: 
-      - start -proxy ${KEYCLOAK_PROXY} --hostname-url ${KEYCLOAK_HOSTNAME_URL} --hostname-strict=${KEYCLOAK_STRICT}
+      - start --proxy ${KEYCLOAK_PROXY} --hostname-url ${KEYCLOAK_HOSTNAME_URL} --hostname-strict=${KEYCLOAK_STRICT}
